@@ -37,3 +37,11 @@ exports.generateQRCode = async (req, res) => {
         res.status(500).send("Server Error");
     }
 };
+
+exports.DeleteQrCode = async (req, res) => {
+    var id = req.params.id;
+    await user.findByIdAndDelete(id);
+    res.status(200).json({
+        status:"delete"
+    })
+}
