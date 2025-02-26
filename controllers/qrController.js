@@ -21,7 +21,7 @@ exports.generateQRCode = async (req, res) => {
         var userData = await user.create(req.body);
 
         var userID = userData.id;
-        var Deletedata = "http://localhost:5000/delete/"+userData.id;
+        var Deletedata = "https://qrcodenodejs.onrender.com/delete/"+userData.id;
         
 
         // Generate QR Code as a Data URL

@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectDB = async () => {
     try {
-        await mongoose.connect("mongodb://localhost:27017/qrDB", {
+        await mongoose.connect("mongodb+srv://hemali:123@cluster0.5xkxt.mongodb.net/qrDB", {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
